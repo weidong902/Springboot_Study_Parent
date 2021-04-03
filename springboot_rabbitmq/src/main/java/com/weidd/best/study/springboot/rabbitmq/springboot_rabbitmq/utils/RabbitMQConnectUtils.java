@@ -18,15 +18,16 @@ public class RabbitMQConnectUtils {
     static {
         // 重量级对象,在类加载时只进行一次赋值.
         factory = new ConnectionFactory();
-    }
-
-    // 提供创建连接的方法
-    public static Connection getRabbitMQConnection() {
         factory.setHost("localhost");
         factory.setPort(5672);
         factory.setVirtualHost("/rabbitmqtest1");
         factory.setUsername("rabbitmqtest1user");
         factory.setPassword("rabbitmqtest1user");
+    }
+
+    // 提供创建连接的方法
+    public static Connection getRabbitMQConnection() {
+
         try {
             return factory.newConnection();
         } catch (IOException e) {
