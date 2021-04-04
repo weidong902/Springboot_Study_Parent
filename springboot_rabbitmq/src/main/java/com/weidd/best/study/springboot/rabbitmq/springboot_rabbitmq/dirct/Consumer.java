@@ -26,7 +26,8 @@ public class Consumer {
         Connection connection = factory.newConnection();*/
         Connection connection = RabbitMQConnectUtils.getRabbitMQConnection();
         Channel channel = connection.createChannel();
-        channel.queueDeclare("rabbitmqtestqueue1", false, false, false, null);
+        // 通道与队列建立连接
+        channel.queueDeclare("rabbitmqtestqueue1", true, false, false, null);
 
         //消费消息
         // 参数1:消费哪个队列的消息(队列名称)

@@ -1,9 +1,6 @@
 package com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.dirct;
 
-import com.rabbitmq.client.AMQP;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.*;
 import com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.utils.RabbitMQConnectUtils;
 import org.junit.Test;
 
@@ -41,12 +38,12 @@ public class Provider {
         // 参数1:队列名称(如果首次会自动新建名称)
         // 参数2:durable是否持久化 false 不持久话. true 持久化
         // 参数3: exclusive 是否独占队列 false不独占 ,true 独占队列
-        // 参数4: autoDelete 消息消费完后是否删除 true 删除 ,false 不删除
+        // 参数4: autoDelete 消息消费完后是否被删除(队列的删除) true 删除 ,false 不删除
         // 参数5: 其他参数
-        channel.queueDeclare("rabbitmqtestqueue1", false, false, false, null);
+        channel.queueDeclare("rabbitmqtestqueue1", true, false, false, null);
         //发布消息
-        // 参数1:交换机(简单模式没有交换机) 参数2: 队列名称 参数3:传递消息额外设置 参数4:消息的具体内容
-        channel.basicPublish("", "rabbitmqtestqueue1", null, "你好".getBytes());
+        // 参数1:交换机(简单模式没有交换机) 参数2: 队列名称 参数3:传递消息额外设置(MessageProperties.PERSISTENT_TEXT_PLAIN:消息持久化到硬盘中) 参数4:消息的具体内容
+        channel.basicPublish("", "rabbitmqtestqueue1", MessageProperties.PERSISTENT_TEXT_PLAIN, "你好".getBytes());
 
         /*channel.close();
         connection.close();*/
