@@ -1,7 +1,7 @@
-package com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.helloword;
+package com.weidd.best.study.springboot.rabbitmq.rabbitmq_basics.helloword;
 
 import com.rabbitmq.client.*;
-import com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.utils.RabbitMQConnectUtils;
+import com.weidd.best.study.springboot.rabbitmq.rabbitmq_basics.utils.RabbitMQConnectUtils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;

@@ -1,4 +1,4 @@
-package com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.utils;
+package com.weidd.best.study.springboot.rabbitmq.rabbitmq_basics.utils;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

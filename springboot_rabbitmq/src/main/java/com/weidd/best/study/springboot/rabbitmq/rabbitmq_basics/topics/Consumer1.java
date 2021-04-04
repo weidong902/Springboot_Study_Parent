@@ -1,10 +1,8 @@
-package com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.topics;
+package com.weidd.best.study.springboot.rabbitmq.rabbitmq_basics.topics;
 
 import com.rabbitmq.client.*;
-import com.sun.el.parser.AstTrue;
-import com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.utils.RabbitMQConnectUtils;
+import com.weidd.best.study.springboot.rabbitmq.rabbitmq_basics.utils.RabbitMQConnectUtils;
 
-import javax.swing.event.ChangeEvent;
 import java.io.IOException;
 
 /**

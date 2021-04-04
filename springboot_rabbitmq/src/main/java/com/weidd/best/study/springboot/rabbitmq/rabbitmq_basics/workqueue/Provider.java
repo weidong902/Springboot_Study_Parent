@@ -1,9 +1,9 @@
-package com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.workqueue;
+package com.weidd.best.study.springboot.rabbitmq.rabbitmq_basics.workqueue;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.MessageProperties;
-import com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.utils.RabbitMQConnectUtils;
+import com.weidd.best.study.springboot.rabbitmq.rabbitmq_basics.utils.RabbitMQConnectUtils;
 import org.junit.Test;
 
 import java.io.IOException;
