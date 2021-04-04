@@ -1,0 +1,13 @@
+# 给项目起名字
+spring:
+  application:
+    name: springboot-rabbitmq
+  # springboot 配置rabbitmq (yaml:[属性: 属性值]之间有空格)
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: rabbitmqtest1user
+    password: rabbitmqtest1user
+    virtual-host: /rabbitmqtest1
+
+
