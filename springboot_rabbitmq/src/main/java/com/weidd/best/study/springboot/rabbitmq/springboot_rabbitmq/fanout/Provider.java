@@ -11,6 +11,7 @@ import java.io.IOException;
  * @program: Springboot_Study_Parent
  * @author: weidd
  * @date: 2021-04-03 20:14
+ * fanout :第三种模式
  **/
 public class Provider {
     public static void main(String[] args) throws IOException {

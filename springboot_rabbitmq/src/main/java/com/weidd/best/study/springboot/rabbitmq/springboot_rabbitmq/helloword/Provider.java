@@ -1,4 +1,4 @@
-package com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.dirct;
+package com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.helloword;
 
 import com.rabbitmq.client.*;
 import com.weidd.best.study.springboot.rabbitmq.springboot_rabbitmq.utils.RabbitMQConnectUtils;
@@ -11,6 +11,8 @@ import java.util.concurrent.TimeoutException;
  * @program: Springboot_Study_Parent
  * @author: weidd
  * @date: 2021-04-03 14:53
+ *
+ * HelloWord: 第一种模式.
  **/
 public class Provider {
     //生产消息
